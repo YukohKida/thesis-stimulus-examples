@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>博士論文 実験刺激例</title>
+<meta name="description" content="博士論文の10実験で用いた動く点列の刺激を、条件ごとにブラウザで再生できるページです。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%277%27 fill=%27%23808080%27/%3E%3Ccircle cx=%278%27 cy=%2719%27 r=%273.2%27/%3E%3Ccircle cx=%2716%27 cy=%2713%27 r=%273.2%27/%3E%3Ccircle cx=%2724%27 cy=%2719%27 r=%273.2%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-root="./" data-page="home">
+<div class="wrap">
+  <header data-site-head></header>
+  <main>
+    <section class="home-hero" aria-labelledby="home-title">
+      <span class="eyebrow">Stimulus viewer</span>
+      <h1 class="page-title" id="home-title">博士論文 実験刺激例</h1>
+      <p class="lead">博士論文の10実験で使った「波打つ点列」の刺激を、条件ごとにブラウザで再生できます。刺激は元の実験プログラムと同じ計算式で描いています。見たい実験を選んでください。</p>
+      <div class="spec-strip" aria-label="基準刺激の仕様">
+        <span class="chip">点 <b>10個</b></span>
+        <span class="chip">直径 <b>16 px</b></span>
+        <span class="chip">振幅 <b>32 px</b></span>
+        <span class="chip">波長 <b>250 px</b></span>
+        <span class="chip">速さ <b>1 Hz</b></span>
+        <span class="chip">背景 <b>RGB 128</b></span>
+      </div>
+    </section>
+
+    <section aria-labelledby="exp-list-title">
+      <div class="block-head">
+        <h2 class="section-title" id="exp-list-title">実験を選ぶ</h2>
+        <p class="note">カードの動画は各実験の代表的な条件です。ノイズのない刺激を見るには Exp1 の「位置ノイズ 0 px」をご覧ください。</p>
+      </div>
+      <div class="exp-grid" id="exp-grid"></div>
+    </section>
+
+    <section aria-labelledby="tools-title" style="margin-top:44px">
+      <div class="block-head"><h2 class="section-title" id="tools-title">ツール</h2></div>
+      <div class="tool-grid">
+        <a class="tool-card" href="playground/index.html">
+          <span class="exp-num">PLAYGROUND</span>
+          <h3>パラメータ自由調整</h3>
+          <p>位置ノイズ、点の間隔、長さ、波長、速さ、妨害ノイズをスライダーで動かし、実験条件の間も連続的に確かめられます。</p>
+        </a>
+        <a class="tool-card" href="image-generator/index.html">
+          <span class="exp-num">EXPORT</span>
+          <h3>刺激画像の書き出し</h3>
+          <p>論文の図などに使う静止画を、全実験・全条件について PNG で書き出します。コマ送りの画像も作れます。</p>
+        </a>
+      </div>
+    </section>
+  </main>
+  <footer data-site-foot></footer>
+</div>
+<script src="lib/p5/p5.min.js"></script>
+<script src="assets/js/common.js"></script>
+<script src="assets/js/stimuli.js"></script>
+<script src="assets/js/experiments.js"></script>
+<script src="assets/js/home.js"></script>
+</body>
+</html>
