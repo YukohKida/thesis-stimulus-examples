@@ -2,6 +2,9 @@
 
 博士論文の10実験で使った「波打つ点列」の刺激を、ブラウザで条件ごとに再生できるサイトです。GitHub Pages でそのまま公開できます（ビルド不要）。
 
+## リンク
+https://yukohkida.github.io/thesis-stimulus-examples/
+
 ## ページ
 
 | ページ | 内容 |
