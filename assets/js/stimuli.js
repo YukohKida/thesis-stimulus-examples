@@ -353,7 +353,7 @@
   SV.screens = {
     // Exp1〜3：jsPsych の別画面（白い背景に青い「+」、font-size 35px）
     htmlBluePlus(g, W, H) {
-      g.background(255);
+      g.background(128);
       g.noStroke();
       g.fill(0, 0, 255);
       g.textStyle(C.NORMAL);
@@ -392,7 +392,7 @@
       g.textStyle(C.NORMAL);
     },
     // 刺激の後は回答画面に切り替わる（Exp1〜8 は白、Exp9・10 は灰色のページ）
-    blankWhite(g) { g.background(255); },
+    blankWhite(g) { g.background(128); },
     blankGray(g) { g.background(128); }
   };
 
